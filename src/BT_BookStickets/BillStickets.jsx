@@ -51,9 +51,9 @@ function BillStickets() {
           <td></td>
         </tr>
       </tbody>
-      <div className='text-right'>
+      {/* <div className='text-right'>
         <button className="btn btn-secondary mt-2" onClick={() => handleSelectedSeats(selectedSeat)}>Thanh toán</button>
-      </div>
+      </div> */}
     </table>
   )
 }

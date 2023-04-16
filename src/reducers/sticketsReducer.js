@@ -241,8 +241,6 @@ function sticketsReducer(state = initialState, action) {
             // })
 
 
-
-
             if (isChooseSeat) {
                 const newSeats = state.selectedSeat.filter((item) => {
                     return item.seats !== action.payload.seats;

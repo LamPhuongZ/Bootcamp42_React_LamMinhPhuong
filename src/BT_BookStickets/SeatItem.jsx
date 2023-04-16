@@ -8,6 +8,13 @@ function SeatItem() {
 
   const { seatListAll, selectedSeat } = useSelector((state) => state.sticketsReducer);
 
+  // const handleTest = (row, seats) => {
+  //   dispatch({
+  //     type: "GHE_DANG_CHON",
+  //     row, seats
+  //   })
+  // }
+
   return (
     <div>
       <div className='seatItem'>
