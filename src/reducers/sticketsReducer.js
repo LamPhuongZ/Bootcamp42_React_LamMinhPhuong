@@ -216,6 +216,33 @@ function sticketsReducer(state = initialState, action) {
                 return item.seats === action.payload.seats;
             });
 
+            // // Tìm hàng của danh sách ghế ngồi
+            // const indexRow = state.seatListAll.findIndex((item) => item.row === action.row);
+
+            // console.log(state.seatListAll[indexRow]);
+
+            // // Tạo mới danh sách seatsList
+            // const seatsList = state.seatListAll[indexRow].seatsList.map((item) => {
+            //     if (item.seats === action.seats) {
+            //         if (item.selected) {
+            //             return { ...item, booked: false }
+            //         }
+            //         return { ...item, booked: true };
+            //     }
+            //     return item;
+            // })
+
+            // // tạo mảng seatList mới
+            // const seatList = state.seatListAll.map((item) => {
+            //     if (item.hang === action.hang) {
+            //         return { ...item, seatsList: seatsList };
+            //     }
+            //     return item;
+            // })
+
+
+
+
             if (isChooseSeat) {
                 const newSeats = state.selectedSeat.filter((item) => {
                     return item.seats !== action.payload.seats;
